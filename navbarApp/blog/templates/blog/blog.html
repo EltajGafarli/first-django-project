@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %} Blog Page {% endblock %}
+
+{% block content %} {% for blog in blogs %}
+{% include 'blog/partial/links.html' %}
+{% endfor %} 
+{% endblock %}

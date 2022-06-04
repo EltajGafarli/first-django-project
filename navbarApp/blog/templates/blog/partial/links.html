@@ -1,0 +1,17 @@
+{% load static %}
+
+<div class="card w-75" style="margin-left:90px">
+  <div class="row no-gutters">
+      <div class="col-sm-5">
+          <img class="card-img img-fluid" src="{% static "imgs/"|add:blog.img %}" alt="Suresh Dasari Card">
+      </div>
+      <div class="col-sm-7">
+          <div class="card-body">
+              <h5 class="card-title">{{blog.name}}</h5>
+              <p class="card-text display-6">{{blog.id}}</p>
+              <p class="card-text">{{blog.description}}</p>
+              <a href="#" class="btn btn-primary">View Profile</a>
+          </div>
+      </div>
+  </div>
+</div>
